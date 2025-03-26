@@ -20,7 +20,7 @@
 ^FO3,60    ^FX// Left, Top
 ^TBN,380,55
 ^FB300,3,1,C
-^FD{items.name}^FS
+^FD#V{items.name}#V^FS
 
 ^FO0,107   ; Position the overlay box to cover bottom half
 ^GB304,35,304,W^FS  ; White box (300 wide, 25 high, filled)
@@ -29,14 +29,14 @@
 ^FT0,158    ^FX// Left, Top
 ^A0N,60,60  ^FX// Height and width of text
 ^FB304,1,0,C
-^FD${items.unit_price}^FS
+^FD$#V{items.unit_price}#V^FS
 
 
 ^FX// UPC Number
 ^FT5,190
 ^A0N,23,23
 ^FB304,1,0,C
-^FD {items.item_number}^FS
+^FD #V{items.item_number}#V^FS
 
 ^PQ1,0,1,N
 
