@@ -14,7 +14,7 @@
 ^FT23,59    ^FX// Left, Top
 ^A0N,65,58  ^FX// Height and width of text
 ^FB304,1,0,L
-^FD{items.unit_price}^FS
+^FD#V{items.unit_price}#V^FS
 
 ^FX// Walts SCRIPT logo 249x46
 ^FO270,10^GFA,1144,1144,22, 
@@ -32,7 +32,7 @@ gO0G1GCS0gO0G7GES0gO0HFS0K0G8N0G1GCR0G1HFI0G7I0GFK0J0G1GCN0G3GER0G7HFG8G0G1GFG8G
 ^FO1,81    ^FX// Left, Top
 ^TBN,380,55
 ^FB456,3,1,C
-^FD{items.name}^FS
+^FD#V{items.name}#V^FS
 
 ^FO0,130   ; Position the overlay box to cover bottom half
 ^GB456,35,30,W^FS  ; White box (300 wide, 25 high, filled)
@@ -42,13 +42,13 @@ gO0G1GCS0gO0G7GES0gO0HFS0K0G8N0G1GCR0G1HFI0G7I0GFK0J0G1GCN0G3GER0G7HFG8G0G1GFG8G
 ^FT5,155
 ^A0N,17,16
 ^FB440,1,0,R
-^FD {items.product_id}^FS
+^FD #V{items.product_id}#V^FS
 
 
 ^FX// UPC barcode
 ^BY2,3.0,100
 ^FO3,160^BCN,60,Y,N,N,A
-^FD{items.item_number}^FS
+^FD#V{items.item_number}#V^FS
 
 
 ^XZ
