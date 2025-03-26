@@ -16,12 +16,12 @@ G0GFGCO0G3HFGCN0G3IFN0G7IFGCM0G7JFM0KFGCL0LFL0LFGCK0HFG0JFK0G7GFG8G3IFG8J0G7GFG8
 ^FX// UPC and BBID
 ^CF0,19
 ^FO525      ^FX// Position from the top
-^FB380,1,1,C,10 ^FDUPC: {items.item_number} / BBID: {boundbook.boundbook_id}^FS      ^FX// UPC, Bound book ID, Location
+^FB380,1,1,C,10 ^FDUPC: #V{items.item_number}#V / BBID: #V{boundbook.boundbook_id}#V^FS      ^FX// UPC, Bound book ID, Location
 
 ^FX// Bound Book Name
 ^CF0,15
 ^FO420      ^FX// Position from the top
-^FB380,1,1,R ^FD{boundbook.boundbook_name}^FS      ^FX// UPC, Bound book ID, Location
+^FB380,1,1,R ^FD#V{boundbook.boundbook_name}#V^FS      ^FX// UPC, Bound book ID, Location
 
 
 ^FX// Product Name
@@ -29,7 +29,7 @@ G0GFGCO0G3HFGCN0G3IFN0G7IFGCM0G7JFM0KFGCL0LFL0LFGCK0HFG0JFK0G7GFG8G3IFG8J0G7GFG8
 ^FO445,0   ^FX// Position from the top
 ^FB380,3,1,L,10
 ^TB,380,70
-^FD{items.name}^FS
+^FD#V{items.name}#V^FS
 
 ^FX// Black bar
 ^FO440,0        ^FX// Position from the top
@@ -43,7 +43,7 @@ G0GFGCO0G3HFGCN0G3IFN0G7IFGCM0G7JFM0KFGCL0LFL0LFGCK0HFG0JFK0G7GFG8G3IFG8J0G7GFG8
 ^CF0,32
 ^FX// Manufacturer DATA
 ^FO345,0        ^FX// Position from the top
-^FB380,2,1,L,10 ^FD{boundbook.manufacturer_name}^FS
+^FB380,2,1,L,10 ^FD#V{boundbook.manufacturer_name}#V^FS
 
 ^FX// Model LABEL
 ^CF0,22
@@ -52,7 +52,7 @@ G0GFGCO0G3HFGCN0G3IFN0G7IFGCM0G7JFM0KFGCL0LFL0LFGCK0HFG0JFK0G7GFG8G3IFG8J0G7GFG8
 ^FX// Model DATA
 ^CF0,36
 ^FO245,0        ^FX// Position from the top
-^FB700,2,1,L ^FD{boundbook.model_number}^FS
+^FB700,2,1,L ^FD#V{boundbook.model_number}#V^FS
 
 
 ^FX// Type LABEL
@@ -62,7 +62,7 @@ G0GFGCO0G3HFGCN0G3IFN0G7IFGCM0G7JFM0KFGCL0LFL0LFGCK0HFG0JFK0G7GFG8G3IFG8J0G7GFG8
 ^FX// Type DATA
 ^CF0,33
 ^FO190,0        ^FX// Position from the top
-^FB380,2,1,L,10 ^FD{boundbook.gun_type}^FS
+^FB380,2,1,L,10 ^FD#V{boundbook.gun_type}#V^FS
 
 
 ^FX// Action LABEL
@@ -72,7 +72,7 @@ G0GFGCO0G3HFGCN0G3IFN0G7IFGCM0G7JFM0KFGCL0LFL0LFGCK0HFG0JFK0G7GFG8G3IFG8J0G7GFG8
 ^FX// Action DATA
 ^CF0,33
 ^FO190,180        ^FX// Position from the top
-^FB700,2,1,L,10 ^FD{boundbook.action}^FS
+^FB700,2,1,L,10 ^FD#V{boundbook.action}#V^FS
 
 
 ^FX// Caliber LABEL
@@ -82,13 +82,13 @@ G0GFGCO0G3HFGCN0G3IFN0G7IFGCM0G7JFM0KFGCL0LFL0LFGCK0HFG0JFK0G7GFG8G3IFG8J0G7GFG8
 ^FX// Caliber DATA
 ^CF0,33
 ^FO135,0        ^FX// Position from the top
-^FB380,2,1,L,10 ^FD{boundbook.caliber}^FS
+^FB380,2,1,L,10 ^FD#V{boundbook.caliber}#V^FS
 
 ^FX// Serial number barcode
 ^BY2,2,55
 ^BC,55,Y,N,N
 ^FO110,5
-^FD{boundbook.serial_number}^FS
+^FD#V{boundbook.serial_number}#V^FS
 
 ^FX//$
 ^CF0,50
@@ -99,7 +99,7 @@ G0GFGCO0G3HFGCN0G3IFN0G7IFGCM0G7JFM0KFGCL0LFL0LFGCK0HFG0JFK0G7GFG8G3IFG8J0G7GFG8
 ^CF0,88
 ^FO0,30     ^FX// Position from the top/left
 ^FB400,,,L
-^FD{items.unit_price}^FS      ^FX//$
+^FD#V{items.unit_price}#V^FS      ^FX//$
 
 
 
